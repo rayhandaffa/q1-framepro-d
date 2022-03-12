@@ -1,0 +1,209 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+ <!-- banner section -->
+    <section id="home" class="w3l-banner py-5">
+        <div class="container py-lg-5 py-md-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
+                    <span class="subhny-title mb-2">Fast and Easy</span>
+                    <h3 class="mb-4">Express<br>
+                        Home Delivery</h3>
+                    <p>Sell a good quality of brownie and cookie. We also make with heart.</p>
+                    <div class="mt-sm-5 mt-4">
+                        <a class="btn btn-outline-primary btn-style mr-2" asp-area="" asp-controller="Home" asp-action="Collaboration"> Read More <span
+                                class="fa fa-chevron-right"></span></a>
+                        <a class="btn btn-primary btn-style" asp-area="" asp-controller="Home" asp-action="Product"> Order Now <span
+                                class="fa fa-chevron-right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-5">
+                    <div class="img-effect text-lg-center">
+                        <img src="~/images/cokies_depan.png" alt="banner" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <!-- /bottom-grids-->
+    <section class="w3l-bottom-grids-6 py-5">
+        <div class="container py-lg-5 py-md-4">
+            <span class="subhny-title text-center mb-2">Online Order</span>
+            <h3 class="hny-title text-center mb-5">How it works?</h3>
+            <div class="grids-area-hny main-cont-wthree-fea row">
+                <div class="col-lg-4 col-md-6 grids-feature">
+                    <div class="area-box">
+                        <span class="fa fa-mobile"></span>
+                        <h4><a href="#feature" class="title-head">Online Food Ordering</a></h4>
+                        <p>Takeaway apps are changing food culture - Now you can find dishes cooked by chefs at 'virtual' restaurants.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
+                    <div class="area-box box-active">
+                        <span class="fa fa-gift"></span>
+                        <h4><a href="#feature" class="title-head">Food Delivery</a></h4>
+                        <p>Food delivery will helps ypu to order while you in home. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
+                    <div class="area-box">
+                        <span class="fa fa-building-o"></span>
+                        <h4><a href="#feature" class="title-head">Drive in Restaurant</a></h4>
+                        <p>Drive in Restaurant will the best choice for you to entertanit yourself.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- //bottom-grids-->
+    <!-- home page block2 grids -->
+    <section class="w3l-grids-3 py-5">
+        <div class="container py-lg-5 py-md-4">
+            <div class="row bottom-ab-grids">
+                <div class="col-lg-6 bottom-ab-left pr-lg-5">
+                    <span class="subhny-title mb-2">Faster than light</span>
+                    <h3 class="hny-title mb-4">Giving your Hunger a new Option</h3>
+                    <p class="">Cokiedessert are an MSME business that implements eco friendly and uses good quality materials and uses plant based. We will also help you to protect the earth for our children and grandchildren. </p>
+                    <ul class="cont-4 mt-4">
+                        <li><span class="fa fa-check"></span>Good quality only.</li>
+                        <li><span class="fa fa-check"></span>Implement to plant based.</li>
+                        <li><span class="fa fa-check"></span>Eco friendly and help to keep earth.</li>
+                    </ul>
+                    <a asp-area="" asp-controller="Home" asp-action="Company" class="btn btn-style btn-primary mt-lg-5 mt-4">Read More <span
+                            class="fa fa-chevron-right"></span></a>
+                </div>
+                <div class="col-lg-6 bottom-left-grids mt-lg-0 mt-4">
+                    <img src="~/images/IMG_6166.png" alt="" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+
+     <script src="~/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+
+        <script src="~/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+        <!-- responsive tabs -->
+        <script src="~/js/jquery-1.9.1.min.js"></script>
+
+        <script src="~/js/easyResponsiveTabs.js"></script>
+
+        <!--Plug-in Initialisation-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                //Horizontal Tab
+                $('#parentHorizontalTab').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    tabidentify: 'hor_1', // The tab groups identifier
+                    activate: function (event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
+            });
+        </script>
+
+    <script src="~/js/jquery-3.3.1.min.js"></script> <!-- Common jquery plugin -->
+
+        <script src="~/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+        <!-- responsive tabs -->
+        <script src="~/js/jquery-1.9.1.min.js"></script>
+
+        <script src="~/js/easyResponsiveTabs.js"></script>
+
+        <!--Plug-in Initialisation-->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                //Horizontal Tab
+                $('#parentHorizontalTab').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    tabidentify: 'hor_1', // The tab groups identifier
+                    activate: function (event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
+                    }
+                });
+            });
+        </script>
+       <!-- //counter-->
+    <script src="~/js/owl.carousel.js"></script><!-- owl carousel -->
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+        <!--/MENU-JS-->
+        <script>
+            $(window).on("scroll", function () {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 80) {
+                    $("#site-header").addClass("nav-fixed");
+                } else {
+                    $("#site-header").removeClass("nav-fixed");
+                }
+            });
+
+            //Main navigation Active Class Add Remove
+            $(".navbar-toggler").on("click", function () {
+                $("header").toggleClass("active");
+            });
+            $(document).on("ready", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+                $(window).on("resize", function () {
+                    if ($(window).width() > 991) {
+                        $("header").removeClass("active");
+                    }
+                });
+            });
+        </script>
+        <!--//MENU-JS-->
+
+        <!-- disable body scroll which navbar is in active -->
+        <script>
+            $(function () {
+                $('.navbar-toggler').click(function () {
+                    $('body').toggleClass('noscroll');
+                })
+            });
+        </script>
+        <!-- //disable body scroll which navbar is in active -->
+
+        <!--bootstrap-->
+        <script src="~/js/bootstrap.min.js"></script>
+        <!-- //bootstrap-->
